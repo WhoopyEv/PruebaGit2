@@ -7,7 +7,7 @@ import utc from "dayjs/plugin/utc";
 dayjs.extend(utc);
 
 function TaskCard({ task }) {
-  // Función para eliminar tareas
+  // Función para eliminar tareas llamando función del Contexto
   const { deleteTask } = useTask();
   return (
     <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
@@ -32,5 +32,6 @@ function TaskCard({ task }) {
     </div>
   );
 }
+
 
 export default TaskCard;
